@@ -1,12 +1,13 @@
 import * as React from 'react';
-import { Link } from 'react-router';
-import { PageSection } from '../../components/page-section';
 import { PageHero } from '../../components/page-hero';
+import { PageSection } from '../../components/page-section';
+import { Link } from 'react-router';
 
-export function HomeContainer() {
-  return (
+export default () => ({
+  path: '/',
+  component : () =>
     <article>
-      <PageHero title="Welcome to" subtitle="React / Redux / TypeScript - starter-kit" />
+      <PageHero title="Welcome to" subtitle="React / Redux / TypeScript - starter-kit sadfsdf" />
       <PageSection className="o-container o-container--small">
         <p>
           Below you can find a few examples created using concepts of this starter-kit:
@@ -16,7 +17,7 @@ export function HomeContainer() {
             <Link to="/currency-converter">Currency Converter App</Link> - (work in progress)
           </li>
           <li>
-            <Link to="/css-modules">CSS Modules</Link> - <a href="https://youtu.be/67pPYqom2a0">Overview Video on Youtube</a>
+            <Link to="/css-modules">CSS Modules</Link> 
           </li>
         </ul>
         <br />
@@ -25,6 +26,5 @@ export function HomeContainer() {
         </div>
       </PageSection>
       <br />
-    </article>
-  );
-};
+    </article>,
+});

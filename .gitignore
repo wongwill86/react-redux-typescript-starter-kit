@@ -35,3 +35,8 @@ __snapshots__
 # Build directory
 dist
 temp
+
+# vim swp
+*.swp
+*.swo
+
